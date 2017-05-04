@@ -1,0 +1,135 @@
+body{
+	width:100%;
+	background:#E0E0E0;
+}
+
+/*顶部导航栏设置*/
+.nav{
+	height:50px;
+	background-color:#303030;
+	text-align:right;	
+}
+
+.logo{
+	width:100px;
+	height:40px;
+	float:left;
+	margin:7px 10px;
+}
+
+.nav .bar{
+	/*display:inline-block;*//*这种虽让可以让列表显示在一行，但是会丢掉项目符号*/
+	float:right;/*让li的父元素靠右显示*/
+}
+
+.nav .bar>li{
+	float:left; /*li相对于父元素靠左显示*/
+	margin-right:30px; /*li之间会有重合，加margin保持一定距离*/
+}
+
+.nav .bar>li a{
+	color:white;
+	font-size:10px;
+	text-decoration:none;/*去掉下划线*/
+}
+
+/*正文设置*/
+.articles{
+	background:white;
+	margin:20px;
+	padding:20px; /*设置内容与父元素的距离，要在父元素里设置padding，而不是在子元素设置*/
+}
+
+.fstTitle{
+	/*margin-top:50px;*//*设置内容与父元素的距离，要在父元素里设置padding，而不是在子元素设置*/
+}
+.sndTitle, .authorTime{
+	color:#C0C0C0;
+}
+
+.authorTime{
+	font-size:10px;
+}
+
+.rmvStyle{
+	list-style-type:none;/*去除项目符号*/
+}
+
+/*设置图片大小*/
+.fstArticle .gugong{
+	height:40%;
+	width:40%;
+}
+.sndArticle .gugong{
+	height:40%;
+	width:40%;
+}
+
+.thdArticle img{
+	height:100%;
+	width:100%;
+}
+
+
+.thdArticle div{
+	width:25%;
+	border:1px solid #C0C0C0;
+	text-align:center;
+	padding:0 20px 20px 20px;
+	margin:20px;
+}
+
+/*表格*/
+.forthArticle table{
+	width:100%;
+	border-collapse:collapse;/*去掉表格之间的间隙*/
+	text-align:left;
+}
+.forthArticle table,th,tr,td{
+	border:1px solid #C0C0C0;
+}
+
+.forthArticle .tableHead{
+	background-color:black;
+	color:white;
+}
+
+.forthArticle .tableFoot{
+	background-color:#C0C0C0;
+}
+
+.wrapper{
+	height:40px;
+	vertical-align:center;
+	margin-bottom:20px;
+	position:relative;
+
+}
+.asideBar .blankBox{
+	border:1px solid #C0C0C0;
+	height:100%;
+	width:0;
+	display:inline-block;
+	margin-right:10px;
+}
+
+.asideBar h2{
+	display:inline-block;
+	transform:translateY(-50%);
+	position:absolute;
+}
+
+form{
+	position: relative;
+}
+
+form input{
+	display:inline-block;
+	left: 50%;
+      top: 50%;
+
+	transform:translateY(-50%) translateX(-50%) ;
+	position:absolute;
+}
+
+
